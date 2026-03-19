@@ -1,0 +1,74 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cross-fade{
+  animation: text-appear;
+  animation-timeline: view();
+}
+
+@keyframes text-appear{
+  0%{
+    opacity: 0;
+    transform: translateY(100px) scale(0);
+  }
+  30%{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.different-bg{
+  background-color: #F8F9FA;
+}
+
+@media screen and (max-width: 1560px) {
+  .size-change{
+    max-width: 40%;
+  }
+  /*.custom-width{*/
+  /*  max-width: 60%;*/
+  /*}*/
+}
+
+/*@media screen and (max-width: 1250px) {*/
+/*  .custom-width{*/
+/*    max-width: 70%;*/
+/*  }*/
+/*}*/
+
+.press-logo{
+  max-height: 35%;
+  min-height: 20%;
+  min-width: 15px;
+  max-width: 120px;
+}
+
